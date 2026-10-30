@@ -43,7 +43,7 @@ if (nota1 < 0 || nota1 > 10 ||
   console.log("Nota 3:", nota3);
   console.log("Nota 4:", nota4);
 
-  // Calcula a média das 3 notas
+  // Calcula a média das 4 notas
   let media = (nota1 + nota2 + nota3 + nota4) / 4;
 
   console.log("Média calculada:", media);
@@ -54,7 +54,7 @@ if (nota1 < 0 || nota1 > 10 ||
   if (media >= 7) {
     situacao = "Aprovado";
   }
-  else if (media >= 5 && media <= 6.9) {
+  else if (media >= 5) {
     situacao = "Recupeção";
   }
   else { 
