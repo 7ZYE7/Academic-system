@@ -11,8 +11,8 @@ function calcularMedia() {
 
 // Conferir: algum campo vazio?
 
-  if (nome === "" || nota1 === "" || nota2 === "" || nota3 === "") {
-  document.getElementById("resultado").innerText = "Preencha o nome e as três notas!";
+  if (nome === "" || nota1 === "" || nota2 === "" || nota3 === "" || nota4 === "") {
+  document.getElementById("resultado").innerText = "Preencha o nome e as quatro notas!";
   return;
   }
 
