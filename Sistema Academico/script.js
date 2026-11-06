@@ -13,12 +13,14 @@ function calcularMedia() {
 
   if (nome === "" || nota1 === "" || nota2 === "" || nota3 === "" || nota4 === "") {
   document.getElementById("resultado").innerText = "Preencha o nome e as quatro notas!";
+  document.getElementById("resultado").className = "erro";
   return;
   }
 
 // Conferir: o nome tem algum número?
 if (/[0-9]/.test(nome)) {
   document.getElementById("resultado").innerText = "O nome não pode ter números!";
+  document.getElementById("resultado").className = "erro";
   return;
   }
 
@@ -33,7 +35,8 @@ if (nota1 < 0 || nota1 > 10 ||
     nota2 < 0 || nota2 > 10 ||
     nota3 < 0 || nota3 > 10 ||
     nota4 < 0 || nota4 > 10){
-    document.getElementById("resultado").innerText = "Escolha um número de 0 a 10!"
+    document.getElementById("resultado").innerText = "Escolha um número de 0 a 10!";
+    document.getElementById("resultado").className = "erro";
     return;
     }
 
@@ -53,12 +56,15 @@ if (nota1 < 0 || nota1 > 10 ||
 
   if (media >= 7) {
     situacao = "Aprovado";
+    document.getElementById("resultado").className = "aprovado";
   }
   else if (media >= 5) {
-    situacao = "Recupeção";
+    situacao = "Recuperação";
+    document.getElementById("resultado").className = "recuperacao";
   }
   else { 
     situacao = "Reprovado";
+    document.getElementById("resultado").className = "reprovado";
   }
   console.log("Situação:", situacao);
 
