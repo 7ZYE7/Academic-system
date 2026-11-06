@@ -3,7 +3,7 @@ body {
   background-color: #EFE6DB;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 21px;
 }
 
 .container {
@@ -12,6 +12,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   width: 320px;
+  color:#505751
 }
 
 label {
